@@ -18,61 +18,68 @@ Your abstract.
 \end{abstract}
 
 \section{Introduction}
-In this paper i will be discussing five topics that i have learned about this year that i found interesting. These topics could include Unix commands, unix tools, and features of perl. The topics i will be discussing are: 
+In this paper i will be discussing five topics that i have learned about this year that i found interesting. These topics could include Unix commands, unix tools, and features of perl. The topics i will be discussing are: <STDIN> within Perl, How similar Perl is to C, The kind of things that perl can be used for, Sort operator in perl, Hashes in perl. 
 \label{sec:examples}
 
-\subsection{Sections}
+\subsection{STDIN}
 
-Use section and subsection commands to organize your document. \LaTeX{} handles all the formatting and numbering automatically. Use ref and label commands for cross-references.
+Using <STDIN> in perl is a very easy way of getting standard input in perl. And i found it very interesting that there was no need of any libraries really in order to use standard input even though in c++ you have to include<fstream>, make a variable and then use the variable in order to be able to input data from the stream. The fact that it's so simple to be able to input is just the start of some of the thins that are made simple in Perl that help make it easy to program in it.
 
-\subsection{Comments}
+\subsection{Similarites of Perl to C}
 
-Comments can be added to the margins of the document using the \todo{Here's a comment in the margin!} todo command, as shown in the example on the right. You can also add inline comments too:
-
-\todo[inline, color=green!40]{This is an inline comment.}
-
-\subsection{Tables and Figures}
-
-Use the table and tabular commands for basic tables --- see Table~\ref{tab:widgets}, for example. You can upload a figure (JPEG, PNG or PDF) using the files menu. To include it in your document, use the includegraphics command as in the code for Figure~\ref{fig:frog} below.
+It was an easy transition from C++ to Perl. Since C++ is similar to C and Perl has very many similarities to C. Not only does it have similar syntax but the things that you can do in the two languages in terms of the logic is pretty similar. For example you have control structures in both languages, you have relational expressions in both languages and many more things that are similar in both languages. 
 
 % Commands to include a figure:
 \begin{figure}
 \centering
-\includegraphics[width=0.5\textwidth]{frog.jpg}
-\caption{\label{fig:frog}This is a figure caption.}
+\includegraphics[width=0.5\textwidth]{perl.JPG}
+\caption{\label{fig:frog}This is the logo for perl}
 \end{figure}
 
 \begin{table}
 \centering
 \begin{tabular}{l|r}
-Item & Quantity \\\hline
-Widgets & 42 \\
-Gadgets & 13
+Perl & C++ \\\hline
+Less Performance & Performance \\
+Not a complete language & Complete Language
 \end{tabular}
-\caption{\label{tab:widgets}An example table.}
+\caption{\label{tab:widgets}Differences between Perl and C++}
 \end{table}
 
-\subsection{Mathematics}
 
-\LaTeX{} is great at typesetting mathematics. Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with $\text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty$, and let
-$$S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
-      = \frac{1}{n}\sum_{i}^{n} X_i$$
-denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $\mathcal{N}(0, \sigma^2)$.
+\subsection{Use of Perl}
 
-\subsection{Lists}
+The use of Perl was something that i personally questioned when i first started using it and was trying to figure out what it's used for. It's main use is for being able to do things in the unix enviroment. It's essentially bash on steroids in terms of power of things you can do and the speed of it. It's also really close syntax and the things you can do are simliar to C so it's easy to adapt to. 
 
-You can make lists with automatic numbering \dots
 
-\begin{enumerate}
-\item Like this,
-\item and like this.
-\end{enumerate}
-\dots or bullet points \dots
-\begin{itemize}
-\item Like this,
-\item and like this.
-\end{itemize}
 
-We hope you find write\LaTeX\ useful, and please let us know if you have any feedback using the help menu above.
+\subsection{Sort Operator}
 
-\end{document}
+The sort operator in perl was very helpful once i found out about it.  So i decided to try to find out what kind of sorting techniques perl uses. Sort works in perl by going every two elements of the original array and puts the value from the left side into the variable "a" and the value on the right side in the variable "b". Then it calls a comparison function. This function returns 1 if the content of a should be on the left and -1 if the content of b should be on the left, or 0 if the values are the same. So essentially doing sort { a cmp b } @words is essentially what the sort function does 
+
+\subsection{Hashes}
+Hashes are a way to hold things in perl, it's a container, which has a key, value pair. So lets say you are trying to keep track of how many times a certain word is referenced in a file  the key could be each of the words and the value could be how many times it's appeared in the file. I found it interesting that perl has hashes because it made me realize how powerful of a language perl is.\newline \newline 
+
+
+
+@article{ahu61,
+       author={Szabo, Gabor},
+       title={Perl Maven Beginner},
+       journal={Perl Maven},
+       volume={},
+       year = 2001,
+       pages = {175-191}
+     }
+     
+     
+@article{ahu61,
+       author={Abhijit, Menon-Sen},
+       title={How Hashes Really Work},
+       journal={Perl},
+       volume={},
+       year = 2002,
+       pages = {1-5}
+     }
+
+
+\end{document}s
