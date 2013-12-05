@@ -18,40 +18,39 @@ Your abstract.
 \end{abstract}
 
 \section{Introduction}
-In this paper i will be discussing five topics that i have learned about this year that i found interesting. These topics could include Unix commands, unix tools, and features of perl. The topics i will be discussing are: <STDIN> within Perl, How similar Perl is to C, The kind of things that perl can be used for, Sort operator in perl, Hashes in perl. 
+In this paper i will be discussing five topics that i have learned about this year that i found interesting. These topics could include Unix commands, unix tools, and features of perl. The topics i will be discussing are: 
 \label{sec:examples}
 
-\subsection{STDIN}
+\subsection{Sections}
 
-Using <STDIN> in perl is a very easy way of getting standard input in perl. And i found it very interesting that there was no need of any libraries really in order to use standard input even though in c++ you have to include<fstream>, make a variable and then use the variable in order to be able to input data from the stream. The fact that it's so simple to be able to input is just the start of some of the thins that are made simple in Perl that help make it easy to program in it.
+Use section and subsection commands to organize your document. \LaTeX{} handles all the formatting and numbering automatically. Use ref and label commands for cross-references.
 
-\subsection{Similarites of Perl to C}
+\subsection{Comments}
 
-It was an easy transition from C++ to Perl. Since C++ is similar to C and Perl has very many similarities to C. Not only does it have similar syntax but the things that you can do in the two languages in terms of the logic is pretty similar. For example you have control structures in both languages, you have relational expressions in both languages and many more things that are similar in both languages. 
+Comments can be added to the margins of the document using the \todo{Here's a comment in the margin!} todo command, as shown in the example on the right. You can also add inline comments too:
+
+\todo[inline, color=green!40]{This is an inline comment.}
+
+\subsection{Tables and Figures}
+
+Use the table and tabular commands for basic tables --- see Table~\ref{tab:widgets}, for example. You can upload a figure (JPEG, PNG or PDF) using the files menu. To include it in your document, use the includegraphics command as in the code for Figure~\ref{fig:frog} below.
 
 % Commands to include a figure:
 \begin{figure}
 \centering
-\includegraphics[width=0.5\textwidth]{perl.JPG}
-\caption{\label{fig:frog}This is the logo for perl}
+\includegraphics[width=0.5\textwidth]{frog.jpg}
+\caption{\label{fig:frog}This is a figure caption.}
 \end{figure}
 
 \begin{table}
 \centering
 \begin{tabular}{l|r}
-Perl & C++ \\\hline
-Less Performance & Performance \\
-Not a complete language & Complete Language
+Item & Quantity \\\hline
+Widgets & 42 \\
+Gadgets & 13
 \end{tabular}
-\caption{\label{tab:widgets}Differences between Perl and C++}
+\caption{\label{tab:widgets}An example table.}
 \end{table}
-
-
-\subsection{Use of Perl}
-
-The use of Perl was something that i personally questioned when i first started using it and was trying to figure out what it's used for. 
-
-
 
 \subsection{Mathematics}
 
